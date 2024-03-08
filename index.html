@@ -8,7 +8,7 @@
         h1 {
             text-align: center;
             position: fixed;
-            top: 26%;
+            top: 28%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 18px;
@@ -33,7 +33,12 @@
         }
 
         body {
-            text-align: center;
+            width: 100vw;
+            height: 100vh;
+            background-image: url(./images/fundo.svg);
+            background-size: 100%; /* Redimensiona a imagem para cobrir todo o fundo */
+            background-position: center; /* Centraliza a imagem no fundo */
+            background-repeat: no-repeat;
         }
 
         button {
@@ -62,6 +67,12 @@
             transition: 0.3s;
         }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+
         @media screen and (max-width: 600px) {
             /* Estilos para telas menores que 600px de largura */
             .qr_code {
@@ -80,7 +91,9 @@
         <p>Insira o QR code do PIX abaixo:</p>
         <img src="./images/qr_code.png" alt="QR Code do PIX" class="qr_code">
     <div>
-        <button onclick="copiarTexto()">Copiar código QR Code</button>
+        <button onclick="copiarTexto()">Copiar código QR Code
+            <img src="" alt="" >
+        </button>
     </div>
 
     <script>     
