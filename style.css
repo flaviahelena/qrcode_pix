@@ -13,11 +13,11 @@ p {
     top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 12px;
+    font-size: 8px;
 }
 
 .qr_code {
-    max-width: 100%;
+    max-width: 10%;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -52,16 +52,4 @@ button {
 button:hover {
     background-color: #545454;
     transition: 0.3s;
-}
-
-@media screen and (max-width: 600px) {
-    h1 {
-        text-align: center;
-        position: fixed;
-        top: 26%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 18px;
-    }
-
 }
