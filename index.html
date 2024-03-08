@@ -71,15 +71,15 @@
             padding: 0;
             box-sizing: 0;
         }
-
+        
         @media screen and (max-width: 600px) {
             /* Estilos para telas menores que 600px de largura */
             .qr_code {
                 max-width: 30%;
                 height: auto;
                 position: fixed;
-                top: 50%;
-                left: 50%;
+                top: 70%;
+                left: 70%;
                 transform: translate(-50%, -50%);
             }
 
@@ -91,27 +91,49 @@
                 background-position: center; /* Centraliza a imagem no fundo */
                 background-repeat: no-repeat;
                 overflow: hidden;
-        }
-        .nomes{
+            }
+            .nomes{
+                text-align: center;
+                position: fixed;
+                top: 28%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 80%;
+            }
+
+            button {
+            background-color: #6D8574;
+            color: white;
+            text-transform: uppercase;
+            transition: 0.3s;
             text-align: center;
-            position: fixed;
-            top: 28%;
-            left: 50%;
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+            font-size: 10px;
+            cursor: pointer;
+            top: 83%;
+            left: 70%;
             transform: translate(-50%, -50%);
-            max-width: 60%;
+            width: 250px;
+            height: auto;
+            display: inline-block;
+            margin: 20px auto;
+            position: absolute;
         }
         }
     </style>
 </head>
 <body>
+    <div>
         <img src="./images/nomes.svg" class="nomes">
         <p>Insira o QR code do PIX abaixo:</p>
         <img src="./images/qr_code.png" alt="QR Code do PIX" class="qr_code">
-    <div>
         <button onclick="copiarTexto()">Copiar código QR Code
             <img src="" alt="" >
         </button>
     </div>
+        
 
     <script>     
         function copiarTexto() {
