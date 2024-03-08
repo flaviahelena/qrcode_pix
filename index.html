@@ -6,61 +6,73 @@
     <title>Presentes</title>
     <style>
         h1 {
-    text-align: center;
-    position: fixed;
-    top: 26%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-}
+            text-align: center;
+            position: fixed;
+            top: 26%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+        }
 
-p {
-    text-align: center;
-    position: fixed;
-    top: 33%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 14px;
-}
+        p {
+            text-align: center;
+            position: fixed;
+            top: 33%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 14px;
+        }
 
-.qr_code {
-    max-width: 30%;
+        .qr_code {
+            max-width: 10%;
             height: auto;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
 
-body {
-    text-align: center;
-}
+        body {
+            text-align: center;
+        }
 
-button {
-    background-color: #6D8574;
-    color: white;
-    text-transform: uppercase;
-    transition: 0.3s;
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-    border: none;
-    font-size: 10px;
-    cursor: pointer;
-    top: 63%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px;
-    height: auto;
-    display: inline-block;
-    margin: 20px auto;
-    position: absolute;
-}
+        button {
+            background-color: #6D8574;
+            color: white;
+            text-transform: uppercase;
+            transition: 0.3s;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+            font-size: 10px;
+            cursor: pointer;
+            top: 63%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 250px;
+            height: auto;
+            display: inline-block;
+            margin: 20px auto;
+            position: absolute;
+        }
 
-button:hover {
-    background-color: #545454;
-    transition: 0.3s;
-}
+        button:hover {
+            background-color: #545454;
+            transition: 0.3s;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* Estilos para telas menores que 600px de largura */
+            .qr_code {
+                max-width: 30%;
+                height: auto;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
     </style>
 </head>
 <body>
