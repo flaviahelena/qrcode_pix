@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Página do PIX</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Presentes</title>
 </head>
 <body>
-    <h1>Olá, este é o PIX!</h1>
-    <p>Insira o QR code do PIX abaixo:</p>
-    <img src="/images/qr_code.png" alt="QR Code do PIX">
+        <h1>Olá, este é o PIX!</h1>
+        <p>Insira o QR code do PIX abaixo:</p>
+        <img src="./images/qr_code.png" alt="QR Code do PIX" class="qr_code">
+    <div>
+        <button onclick="copiarTexto()">Copiar código QR Code</button>
+    </div>
+
+    <script>     
+        function copiarTexto() {
+            var botao = document.querySelector('button');
+            var textoOriginal = botao.textContent;
+            var texto = "00020126580014BR.GOV.BCB.PIX0136a1ae6854-a897-47d2-bbfc-186e870b5fd45204000053039865802BR5922Flavia Helena da Silva6009SAO PAULO610805409000622505210FV60tToEq2UO9g1836ou6304E6CC";
+            
+            navigator.clipboard.writeText(texto).then(function() {
+                botao.textContent = 'Código copiado';
+                setTimeout(function() {
+                    botao.textContent = textoOriginal;
+                }, 1000); // 2000 milissegundos = 2 segundos
+            });
+        }
+        
+    </script>
 </body>
 </html>
