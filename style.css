@@ -17,7 +17,7 @@ p {
 }
 
 .qr_code {
-    max-width: 30%;
+    max-width: 10%;
     position: fixed;
     top: 50%;
     left: 50%;
