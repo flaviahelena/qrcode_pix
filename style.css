@@ -53,3 +53,12 @@ button:hover {
     background-color: #545454;
     transition: 0.3s;
 }
+
+@media screen and (max-width: 600px) {
+    /* Estilos para telas menores que 600px de largura */
+    p {
+        font-size: 14px;
+        width: 90%;
+        padding: 10px;
+    }
+}
