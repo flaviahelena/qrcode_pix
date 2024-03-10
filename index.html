@@ -72,7 +72,6 @@
             padding: 0;
             box-sizing: 0;
         }
-        
         @media screen and (max-width: 600px) {
             /* Estilos para telas menores que 600px de largura */
             p {
@@ -83,6 +82,8 @@
                 transform: translate(-50%, -50%);
                 font-size: 14px;
                 color: #B17D28;
+                width: 100px;
+                height: 50px;
             }   
             .qr_code {
                 max-width: 30%;
@@ -136,7 +137,9 @@
 <body>
     <div>
         <img src="./images/nomes2.svg" class="nomes">
-        <p>Queridos amigos, como vocês bem sabe, ja temos um lar cheio de amor, carinho e bens materiais. Optamos por não fazer lista de presentes. Caso queira nos presentear, sugerimos uma contribuição através de pix.</p>
+        <div>
+            <p>Queridos amigos, como vocês bem sabe, ja temos um lar cheio de amor, carinho e bens materiais. Optamos por não fazer lista de presentes. Caso queira nos presentear, sugerimos uma contribuição através de pix.</p>
+        </div>
         <img src="./images/qr_code.png" alt="QR Code do PIX" class="qr_code">
         <button onclick="copiarTexto()">Copiar código QR Code
             <img src="" alt="" >
